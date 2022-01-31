@@ -1,0 +1,28 @@
+GET http://localhost:5001/pruebas-e7578/us-central1/app
+
+### GET USERS
+GET http://localhost:5001/pruebas-e7578/us-central1/app/api/
+
+### CREATE USER
+POST http://localhost:5001/pruebas-e7578/us-central1/app/api/
+Content-Type: application/json
+
+{
+    "name": "miguel",
+    "phone": "912323233",
+    "address": "Max-Forwards: {{$datetime iso8601}}"
+}
+### GET A USER
+GET http://localhost:5001/pruebas-e7578/us-central1/app/api/1642716324878
+
+### UPDATE USER
+PUT http://localhost:5001/pruebas-e7578/us-central1/app/api/1642716324878
+Content-Type: application/json
+
+{
+    "name": "miguelSSSaS",
+    "phone": "912323233",
+    "address": "Max-Forwards: {{$datetime iso8601}}"
+}
+### DELETE USER
+DELETE http://localhost:5001/pruebas-e7578/us-central1/app/api/1642716324878
